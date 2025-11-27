@@ -1,0 +1,162 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|c:\\h_nguyen\\dai_hoc_cong_thuong_tphcm\\n\u0103m 3\\hoc_ky_5\\b\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\bao_cao_lan_1\\quanlysinhvienoracle\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|solutionrelative:authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|solutionrelative:registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\oraclehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|solutionrelative:oraclehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAD9DFB6-EB55-45A4-B14D-6C7E8CBFBC3E}|QuanLySinhVienOracle.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T12:53:18.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthManager.cs",
+              "DocumentMoniker": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\AuthManager.cs",
+              "RelativeDocumentMoniker": "AuthManager.cs",
+              "ToolTip": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\AuthManager.cs",
+              "RelativeToolTip": "AuthManager.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAowA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T12:43:20.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T06:54:49.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "RegisterForm.cs",
+              "ToolTip": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\RegisterForm.cs",
+              "RelativeToolTip": "RegisterForm.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAMwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T12:51:09.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "RegisterForm.cs",
+              "ToolTip": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T06:54:41.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAD4v0QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T06:48:24.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\LoginForm.cs [Design]",
+              "RelativeToolTip": "LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T06:44:46.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OracleHelper.cs",
+              "DocumentMoniker": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\OracleHelper.cs",
+              "RelativeDocumentMoniker": "OracleHelper.cs",
+              "ToolTip": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\OracleHelper.cs",
+              "RelativeToolTip": "OracleHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T16:04:01.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\H_Nguyen\\Dai_Hoc_Cong_Thuong_TPHCM\\N\u0103m 3\\Hoc_Ky_5\\B\u1EA3o m\u1EADt c\u01A1 s\u1EDF d\u1EEF li\u1EC7u\\Bao_Cao_Lan_1\\QuanLySinhVienOracle\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T12:56:07.912Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
