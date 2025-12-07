@@ -35,3 +35,40 @@ C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ 
 C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Bao_Cao_Lan_1\QuanLySinhVienOracle\obj\Debug\QuanLySi.261697AB.Up2Date
 C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Bao_Cao_Lan_1\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.exe
 C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Bao_Cao_Lan_1\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.pdb
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\QuanLySinhVienOracle.exe.config
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\QuanLySinhVienOracle.exe
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\QuanLySinhVienOracle.pdb
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Buffers.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Formats.Asn1.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Memory.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Numerics.Vectors.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Text.Encodings.Web.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Text.Json.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.ValueTuple.dll
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Buffers.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Formats.Asn1.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Memory.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Numerics.Vectors.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Text.Encodings.Web.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Text.Json.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\bin\Debug\System.ValueTuple.xml
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.csproj.AssemblyReference.cache
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.csproj.SuggestedBindingRedirects.cache
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.exe.config
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.LoginForm.resources
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.Properties.Resources.resources
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.RegisterForm.resources
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.csproj.GenerateResource.cache
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.csproj.CoreCompileInputs.cache
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySi.261697AB.Up2Date
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.exe
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.pdb

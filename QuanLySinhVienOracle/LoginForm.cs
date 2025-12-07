@@ -45,18 +45,32 @@ namespace QuanLySinhVienOracle
             string username = txtTenDangNhap.Text;
             string password = txtMatKhau.Text;
 
-            if (authManager.Login(username, password))
+            //if (authManager.Login(username, password))
+            //{
+            //    MessageBox.Show("Đăng nhập thành công!");
+            //    // Chuyển sang MainForm
+            //    MainForm mainForm = new MainForm();
+            //    mainForm.Show();
+            //    this.Hide();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.");
+            //}
+
+            // Chương 2: TV1
+            // Code mới:
+            if (authManager.LoginSecure(username, password))
             {
                 MessageBox.Show("Đăng nhập thành công!");
-                // Chuyển sang MainForm
                 MainForm mainForm = new MainForm();
                 mainForm.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.");
-            }
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu.");
+            }            // Chương 2: TV1
         }
 
         private void label1_Click(object sender, EventArgs e)

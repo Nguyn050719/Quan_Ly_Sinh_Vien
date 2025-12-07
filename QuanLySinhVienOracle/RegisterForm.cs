@@ -12,6 +12,10 @@ namespace QuanLySinhVienOracle
 {
     public partial class RegisterForm: Form
     {
+        //Chương 2: TV1
+        // Thêm biến này để lưu đường dẫn ảnh
+        private string avatarPath = "";
+        // Chương 2: TV1
         private AuthManager authManager;
         public RegisterForm()
         {
@@ -33,15 +37,30 @@ namespace QuanLySinhVienOracle
             string sdt = txtSDT.Text;
             string diaChi = txtDiaChi.Text;
 
-            if (authManager.Register(username, password, maSV, hoTen, sdt, diaChi))
+            //if (authManager.Register(username, password, maSV, hoTen, sdt, diaChi))
+            //{
+            //    MessageBox.Show("Đăng ký thành công! Bạn có thể đăng nhập ngay bây giờ.");
+            //    this.Close();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Đăng ký thất bại. Tên đăng nhập có thể đã tồn tại hoặc có lỗi xảy ra.");
+            //}
+            // --- PHẦN SỬA ĐỔI: Gọi hàm RegisterSecure thay vì Register ---
+            // Code cũ: if (authManager.Register(...)) 
+
+            // Chương 2: TV1
+            // Code mới:
+            if (authManager.RegisterSecure(username, password, maSV, hoTen, sdt, diaChi, avatarPath))
             {
-                MessageBox.Show("Đăng ký thành công! Bạn có thể đăng nhập ngay bây giờ.");
+                MessageBox.Show("Đăng ký thành công (Đã mã hóa dữ liệu)!");
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Đăng ký thất bại. Tên đăng nhập có thể đã tồn tại hoặc có lỗi xảy ra.");
+                MessageBox.Show("Đăng ký thất bại hoặc Tên đăng nhập đã tồn tại.");
             }
+            // Chương 2: TV1
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -53,5 +72,18 @@ namespace QuanLySinhVienOracle
         {
 
         }
+
+        // Chương 2: TV1
+        private void btnChonAnh_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Image Files|*.jpg;*.png;*.jpeg";
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                avatarPath = dlg.FileName;
+                MessageBox.Show("Đã chọn ảnh: " + System.IO.Path.GetFileName(avatarPath));
+            }
+        }
+        // Chương 2: TV1
     }
 }
