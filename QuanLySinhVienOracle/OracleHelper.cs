@@ -12,7 +12,7 @@ namespace QuanLySinhVienOracle
     {
         private string connectionString = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)" +
             "(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)" +
-            "(SERVICE_NAME=orclsv)));User Id=c##QuanLySinhVien;Password=123;";
+            "(SERVICE_NAME=orclsv)));User Id=QuanLySinhVien;Password=123;";
         private OracleConnection conn;
 
         public OracleHelper()

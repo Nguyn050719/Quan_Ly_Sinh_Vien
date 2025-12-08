@@ -104,5 +104,48 @@ namespace QuanLySinhVienOracle
                 }
             }
         }
+
+        // Trong SecurityHelper.cs
+        public static byte[] DecryptHybrid(byte[] encryptedData, string encryptedKey, string privateKeyXml)
+        {
+            try
+            {
+                // 1. Giải mã Session Key (AES Key) bằng RSA
+                byte[] sessionKey;
+                using (var rsa = new System.Security.Cryptography.RSACryptoServiceProvider())
+                {
+                    rsa.FromXmlString(privateKeyXml);
+                    sessionKey = rsa.Decrypt(Convert.FromBase64String(encryptedKey), false);
+                }
+
+                // 2. Giải mã File ảnh bằng AES
+                using (var aes = System.Security.Cryptography.Aes.Create())
+                {
+                    aes.Key = sessionKey;
+
+                    // Tách IV (16 byte đầu)
+                    byte[] iv = new byte[16];
+                    Array.Copy(encryptedData, 0, iv, 0, 16);
+                    aes.IV = iv;
+
+                    // Giải mã phần còn lại
+                    using (var msDecrypt = new System.IO.MemoryStream())
+                    {
+                        using (var decryptor = aes.CreateDecryptor())
+                        using (var cs = new System.Security.Cryptography.CryptoStream(msDecrypt, decryptor, System.Security.Cryptography.CryptoStreamMode.Write))
+                        {
+                            cs.Write(encryptedData, 16, encryptedData.Length - 16);
+                        }
+                        return msDecrypt.ToArray();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Mẹo: In lỗi ra Console để biết sai ở đâu
+                Console.WriteLine("Lỗi DecryptHybrid: " + ex.ToString());
+                return null;
+            }
+        }
     }
 }

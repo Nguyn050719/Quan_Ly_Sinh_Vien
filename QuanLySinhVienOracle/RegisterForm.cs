@@ -36,7 +36,8 @@ namespace QuanLySinhVienOracle
             string hoTen = txtHoTen.Text;
             string sdt = txtSDT.Text;
             string diaChi = txtDiaChi.Text;
-
+            DateTime ngaySinh = dtpNgaySinh.Value;
+            string email = txtEmail.Text;
             //if (authManager.Register(username, password, maSV, hoTen, sdt, diaChi))
             //{
             //    MessageBox.Show("Đăng ký thành công! Bạn có thể đăng nhập ngay bây giờ.");
@@ -51,7 +52,20 @@ namespace QuanLySinhVienOracle
 
             // Chương 2: TV1
             // Code mới:
-            if (authManager.RegisterSecure(username, password, maSV, hoTen, sdt, diaChi, avatarPath))
+            // 1. Xác định vai trò dựa trên RadioButton
+            string role = "SINHVIEN"; // Mặc định
+            if (rdoAdmin.Checked)
+            {
+                role = "ADMIN";
+            }
+
+            // Kiểm tra nhập liệu cơ bản
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+            if (authManager.RegisterSecure(username, password, maSV, hoTen, ngaySinh, email, sdt, diaChi, avatarPath, role))
             {
                 MessageBox.Show("Đăng ký thành công (Đã mã hóa dữ liệu)!");
                 this.Close();
@@ -84,6 +98,8 @@ namespace QuanLySinhVienOracle
                 MessageBox.Show("Đã chọn ảnh: " + System.IO.Path.GetFileName(avatarPath));
             }
         }
+
+
         // Chương 2: TV1
     }
 }

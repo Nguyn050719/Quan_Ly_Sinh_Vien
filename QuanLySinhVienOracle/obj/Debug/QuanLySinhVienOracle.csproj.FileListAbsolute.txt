@@ -72,3 +72,7 @@ C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ 
 C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySi.261697AB.Up2Date
 C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.exe
 C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.pdb
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.MainForm.resources
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.HocTapForm.resources
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.ThongTinSinhVienForm.resources
+C:\H_Nguyen\Dai_Hoc_Cong_Thuong_TPHCM\Năm 3\Hoc_Ky_5\Bảo mật cơ sở dữ liệu\Báo cáo kết thúc môn\QuanLySinhVienOracle\obj\Debug\QuanLySinhVienOracle.AdminForm.resources

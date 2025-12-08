@@ -24,7 +24,7 @@ namespace QuanLySinhVienOracle
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void lblMatKhau_Click(object sender, EventArgs e)
@@ -58,19 +58,24 @@ namespace QuanLySinhVienOracle
             //    MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.");
             //}
 
+            // Chương 3: TV1
+            string role = authManager.LoginAndGetRole(username, password);
             // Chương 2: TV1
             // Code mới:
-            if (authManager.LoginSecure(username, password))
+            if (!string.IsNullOrEmpty(role))
             {
-                MessageBox.Show("Đăng nhập thành công!");
-                MainForm mainForm = new MainForm();
+                MessageBox.Show("Đăng nhập thành công! Vai trò: " + role);
+
+                // Truyền role sang MainForm
+                MainForm mainForm = new MainForm(role, txtTenDangNhap.Text); // <-- Ta sẽ sửa MainForm để nhận tham số này
                 mainForm.Show();
                 this.Hide();
             }
             else
             {
                 MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu.");
-            }            // Chương 2: TV1
+            }            
+            // Chương 2: TV1
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -82,5 +87,6 @@ namespace QuanLySinhVienOracle
         {
 
         }
+
     }
 }
