@@ -206,3 +206,4 @@ SELECT * FROM SinhVien;
 EXEC Pkg_Security.Set_User('ADMIN');
 
 SELECT * FROM SinhVien;
+
