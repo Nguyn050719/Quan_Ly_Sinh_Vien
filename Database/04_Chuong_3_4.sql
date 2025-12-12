@@ -1,11 +1,11 @@
---PH?N 2: Cài ð?t ?ng d?ng Phân quy?n (App Permission)
--- Thêm c?t VaiTro
+--PH?N 2: CÃ i Ã°?t ?ng d?ng PhÃ¢n quy?n (App Permission)
+-- ThÃªm c?t VaiTro
 ALTER TABLE QuanLySinhVien.SinhVien ADD VaiTro VARCHAR2(20);
 select * from Diem_SinhVien
--- Thêm d? li?u m?u ð? test phân quy?n trên C#
--- Gi? s? SV001 là Admin
+-- ThÃªm d? li?u m?u Ã°? test phÃ¢n quy?n trÃªn C#
+-- Gi? s? SV001 lÃ  Admin
 
--- 1. XÓA D? LI?U C? (Ð? tránh l?i trùng l?p khi ch?y nhi?u l?n)
+-- 1. XÃ“A D? LI?U C? (Ã? trÃ¡nh l?i trÃ¹ng l?p khi ch?y nhi?u l?n)
 DELETE FROM SinhVien_Lop;
 DELETE FROM Diem_MonHoc;
 DELETE FROM Diem_SinhVien;
@@ -15,44 +15,44 @@ DELETE FROM MonHoc;
 DELETE FROM Lop;
 COMMIT;
 DELETE FROM SinhVien; COMMIT;
--- 2. THÊM D? LI?U B?NG L?P
+-- 2. THÃŠM D? LI?U B?NG L?P
 INSERT INTO Lop (MaLop, TenLop, SiSo) VALUES ('L01', 'ATTT_K14', 50);
 INSERT INTO Lop (MaLop, TenLop, SiSo) VALUES ('L02', 'QTM_K14', 45);
 
--- 3. THÊM D? LI?U MÔN H?C
+-- 3. THÃŠM D? LI?U MÃ”N H?C
 INSERT INTO MonHoc (MaMH, TenMH, SoTinChi) VALUES ('MH001', 'Bao Mat Co So Du Lieu', 3);
 INSERT INTO MonHoc (MaMH, TenMH, SoTinChi) VALUES ('MH002', 'Quan Tri Mang', 4);
 INSERT INTO MonHoc (MaMH, TenMH, SoTinChi) VALUES ('MH003', 'Tri Tue Nhan Tao', 3);
 
--- 4. THÊM SINH VIÊN (Bao g?m c? Admin và SV thý?ng)
--- Lýu ?: M?t kh?u ð? là '123' (V? code AuthManager.cs c?a b?n ðang return password chýa bãm)
--- Admin: Có quy?n qu?n l?
+-- 4. THÃŠM SINH VIÃŠN (Bao g?m c? Admin vÃ  SV thÃ½?ng)
+-- LÃ½u ?: M?t kh?u Ã°? lÃ  '123' (V? code AuthManager.cs c?a b?n Ã°ang return password chÃ½a bÃ£m)
+-- Admin: CÃ³ quy?n qu?n l?
 INSERT INTO SinhVien (MaSV, HoTen, NgaySinh, SDT, DiaChi, Email, TenDangNhap, MatKhau, VaiTro) 
 VALUES ('ADMIN01', 'Quan Tri Vien', TO_DATE('1990-01-01', 'YYYY-MM-DD'), '0909123456', 'Hanoi', 'admin@school.edu', 'admin', '123', 'ADMIN');
 
--- Sinh viên 1: H?c l?p ATTT
+-- Sinh viÃªn 1: H?c l?p ATTT
 INSERT INTO SinhVien (MaSV, HoTen, NgaySinh, SDT, DiaChi, Email, TenDangNhap, MatKhau, VaiTro) 
 VALUES ('SV001', 'Nguyen Van An', TO_DATE('2003-05-10', 'YYYY-MM-DD'), '0901234567', 'TPHCM', 'an.nv@school.edu', 'sv001', '123', 'SV');
 
--- Sinh viên 2: H?c l?p M?ng (Ð? test VPD - SV001 không ðý?c th?y ði?m SV002)
+-- Sinh viÃªn 2: H?c l?p M?ng (Ã? test VPD - SV001 khÃ´ng Ã°Ã½?c th?y Ã°i?m SV002)
 INSERT INTO SinhVien (MaSV, HoTen, NgaySinh, SDT, DiaChi, Email, TenDangNhap, MatKhau, VaiTro) 
 VALUES ('SV002', 'Tran Thi Binh', TO_DATE('2003-08-20', 'YYYY-MM-DD'), '0908765432', 'Danang', 'binh.tt@school.edu', 'sv002', '123', 'SV');
 
--- 5. PHÂN L?P CHO SINH VIÊN
+-- 5. PHÃ‚N L?P CHO SINH VIÃŠN
 INSERT INTO SinhVien_Lop (FK_SV_SL, FK_Lop_SL) VALUES ('SV001', 'L01');
 INSERT INTO SinhVien_Lop (FK_SV_SL, FK_Lop_SL) VALUES ('SV002', 'L02');
 
--- 6. NH?P ÐI?M (Quan tr?ng ð? test VPD và OLS)
--- Ði?m c?a SV001 (An)
+-- 6. NH?P ÃI?M (Quan tr?ng Ã°? test VPD vÃ  OLS)
+-- Ãi?m c?a SV001 (An)
 select * from DIEM;
-INSERT INTO Diem (MaDiem, DiemSo, FK_SV_Diem, FK_MH_Diem) VALUES ('D001', 9.5, 'SV001', 'MH001'); -- Ði?m cao (Test OLS: Confidential)
-INSERT INTO Diem (MaDiem, DiemSo, FK_SV_Diem, FK_MH_Diem) VALUES ('D002', 6.0, 'SV001', 'MH002'); -- Ði?m th?p (Test OLS: Public)
+INSERT INTO Diem (MaDiem, DiemSo, FK_SV_Diem, FK_MH_Diem) VALUES ('D001', 9.5, 'SV001', 'MH001'); -- Ãi?m cao (Test OLS: Confidential)
+INSERT INTO Diem (MaDiem, DiemSo, FK_SV_Diem, FK_MH_Diem) VALUES ('D002', 6.0, 'SV001', 'MH002'); -- Ãi?m th?p (Test OLS: Public)
 COMMIT;
--- Ði?m c?a SV002 (Binh)
+-- Ãi?m c?a SV002 (Binh)
 INSERT INTO Diem (MaDiem, DiemSo, FK_SV_Diem, FK_MH_Diem) VALUES ('D003', 9.0, 'SV002', 'MH001');
 INSERT INTO Diem (MaDiem, DiemSo, FK_SV_Diem, FK_MH_Diem) VALUES ('D004', 7.5, 'SV002', 'MH003');
 
--- 7. LIÊN K?T B?NG TRUNG GIAN (Ð? query JOIN ho?t ð?ng ðúng)
+-- 7. LIÃŠN K?T B?NG TRUNG GIAN (Ã? query JOIN ho?t Ã°?ng Ã°Ãºng)
 INSERT INTO Diem_MonHoc (FK_Diem_DMH, FK_MH_DMH) VALUES ('D001', 'MH001');
 INSERT INTO Diem_MonHoc (FK_Diem_DMH, FK_MH_DMH) VALUES ('D002', 'MH002');
 INSERT INTO Diem_MonHoc (FK_Diem_DMH, FK_MH_DMH) VALUES ('D003', 'MH001');
@@ -69,7 +69,7 @@ UPDATE SinhVien
 SET MatKhau = 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3' 
 WHERE MaSV = 'ADMIN01';
 
--- C?p nh?t luôn cho SV001 và SV002 ð? test cho ti?n
+-- C?p nh?t luÃ´n cho SV001 vÃ  SV002 Ã°? test cho ti?n
 UPDATE SinhVien 
 SET MatKhau = 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3' 
 WHERE MaSV IN ('SV001', 'SV002');
@@ -81,21 +81,21 @@ WHERE MaSV = 'ADMIN01';
 UPDATE SinhVien 
 SET ChuKySo = 'kC3Nmgiz48ajkXWU9eudseYPCvK4/jNUyr3DXtiUwyO1wUUSr4C6QyVk0Au96WeaQ4aPMOKJCq6hJ3oIsWTnwxwsH2QDR9kdppBEF0yEvK9mN7Jeu3JoKGWR+V1eaK8BjbzEfocYVM0jDwuNOfXE4cEGcfJ3eYRqeW79UnA7aT/08tblbq8LghN/IZCQwgOFX3WfUhZmY2HxL4l+GglWqVtGCveK3hD3Sp0eJoMmGE7X5Z7K4KjqufNt2QWUvkc2llfV1VSGEj/vXXmA0E1JzcFmsi1MsSgv6lJxWDygNqobIlVrSi7Ffvty3ZpCxgtIRkSdsrDO1rh8biOtEAwgMQ==' 
 WHERE MaSV = 'ADMIN01';
--- 1. Gi? l?p SV001 ðãng nh?p
+-- 1. Gi? l?p SV001 Ã°Ã£ng nh?p
 EXEC Pkg_Security.Set_User('SV001');
 
--- 2. Xem b?ng ði?m (Lúc này Oracle t? ð?ng filter ng?m)
+-- 2. Xem b?ng Ã°i?m (LÃºc nÃ y Oracle t? Ã°?ng filter ng?m)
 SELECT * FROM Diem;
 
--- 1. Gi? l?p SV002 ðãng nh?p
+-- 1. Gi? l?p SV002 Ã°Ã£ng nh?p
 EXEC Pkg_Security.Set_User('SV002');
 
--- 2. Xem b?ng ði?m
+-- 2. Xem b?ng Ã°i?m
 SELECT * FROM Diem;
 
 -- 1. Gi? l?p Admin
 EXEC Pkg_Security.Set_User('admin');
--- 2. Xem b?ng ði?m
+-- 2. Xem b?ng Ã°i?m
 SELECT * FROM Diem;
 
 SELECT * FROM SinhVien;
@@ -120,70 +120,73 @@ UPDATE QuanLySinhVien.Diem
 SET OLS_LABEL = CHAR_TO_LABEL('ACCESS_DIEM', 'CONF')
 WHERE DiemSo >= 8.0;
 
--- Dán nh?n PUB cho ði?m th?p
+-- DÃ¡n nh?n PUB cho Ã°i?m th?p
 UPDATE QuanLySinhVien.Diem 
 SET OLS_LABEL = CHAR_TO_LABEL('ACCESS_DIEM', 'PUB')
 WHERE DiemSo < 8.0;
 
---chýõng 4
+--chÃ½Ãµng 4
  CREATE TABLE NhatKyHeThong (
     ID NUMBER GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
     TaiKhoan VARCHAR2(50),
-    HanhDong VARCHAR2(100), -- Ví d?: "Ðãng nh?p", "Xem ði?m"
+    HanhDong VARCHAR2(100), -- VÃ­ d?: "ÃÃ£ng nh?p", "Xem Ã°i?m"
     ThoiGian TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    TrangThai VARCHAR2(50), -- "Thành công", "Th?t b?i"
+    TrangThai VARCHAR2(50), -- "ThÃ nh cÃ´ng", "Th?t b?i"
     GhiChu VARCHAR2(255)
 );
 
 select * from SinhVien;
 -- Ki?m tra gi? hi?n t?i
 SELECT SYSTIMESTAMP FROM DUAL; 
--- (Ví d?: 10:00:00)
+-- (VÃ­ d?: 10:00:00)
 
--- Xóa m?t sinh viên
+-- XÃ³a m?t sinh viÃªn
 INSERT INTO SinhVien (MaSV, HoTen, NgaySinh, SDT, DiaChi, Email, TenDangNhap, MatKhau, VaiTro) 
-VALUES ('SV01', 'Nguy?n Vãn T', TO_DATE('1990-01-01', 'YYYY-MM-DD'), '0909123456', 'Hanoi', 'admin@school.edu', 'sv01', '123', 'SV');
+VALUES ('SV01', 'Nguy?n VÃ£n T', TO_DATE('1990-01-01', 'YYYY-MM-DD'), '0909123456', 'Hanoi', 'admin@school.edu', 'sv01', '123', 'SV');
 DELETE FROM SinhVien WHERE MaSV = 'SV01';
 COMMIT;
 
--- Ki?m tra l?i: M?t tiêu r?i
+-- Ki?m tra l?i: M?t tiÃªu r?i
 SELECT * FROM SinhVien WHERE MaSV = 'SV01';
 
 
--- Xem l?i d? li?u cách ðây 15 phút (trý?c khi xóa)
+-- Xem l?i d? li?u cÃ¡ch Ã°Ã¢y 15 phÃºt (trÃ½?c khi xÃ³a)
 SELECT * FROM SinhVien AS OF TIMESTAMP (SYSTIMESTAMP - INTERVAL '15' MINUTE)
 WHERE MaSV = 'SV01';
 
--- Khôi ph?c l?i d?ng ð? xóa t? quá kh?
+-- KhÃ´i ph?c l?i d?ng Ã°? xÃ³a t? quÃ¡ kh?
 INSERT INTO SinhVien
 (SELECT * FROM SinhVien AS OF TIMESTAMP (SYSTIMESTAMP - INTERVAL '1' MINUTE)
  WHERE MaSV = 'SV01');
-
+-- ThÃªm cá»™t TrangThai
+ALTER TABLE SinhVien ADD (TrangThai VARCHAR2(10) DEFAULT 'ACTIVE' NOT NULL);
+-- Cáº­p nháº­t táº¥t cáº£ cÃ¡c sinh viÃªn hiá»‡n táº¡i thÃ nh 'ACTIVE'
+UPDATE SinhVien SET TrangThai = 'ACTIVE' WHERE TrangThai IS NULL;
 COMMIT;
 
 select * from NhatKyHeThong;
 
--- 1. T?o d? li?u nháp
+-- 1. T?o d? li?u nhÃ¡p
 INSERT INTO SinhVien (MaSV, HoTen, TenDangNhap) VALUES ('SV_RESTORE', 'Test Phuc Hoi', 'test');
 COMMIT;
 SELECT * FROM SinhVien;
 
--- 2. Ch? 5 giây (ð? Oracle ghi nh?n timestamp)
+-- 2. Ch? 5 giÃ¢y (Ã°? Oracle ghi nh?n timestamp)
 EXEC DBMS_LOCK.SLEEP(5);
 
--- 3. Xóa nó ði
+-- 3. XÃ³a nÃ³ Ã°i
 DELETE FROM SinhVien WHERE MaSV = 'SV_RESTORE';
 COMMIT;
 
--- 4. Ki?m tra: Ð? m?t tiêu (CH?P H?NH 1: M?t d? li?u)
+-- 4. Ki?m tra: Ã? m?t tiÃªu (CH?P H?NH 1: M?t d? li?u)
 SELECT * FROM SinhVien WHERE MaSV = 'SV_RESTORE';
 
--- 5. Xem l?i quá kh? (Flashback) - Lùi l?i 10 giây trý?c
+-- 5. Xem l?i quÃ¡ kh? (Flashback) - LÃ¹i l?i 10 giÃ¢y trÃ½?c
 -- (CH?P H?NH 2: Th?y d? li?u c? hi?n ra)
 SELECT * FROM SinhVien AS OF TIMESTAMP (SYSTIMESTAMP - INTERVAL '10' SECOND)
 WHERE MaSV = 'SV_RESTORE';
 
--- 6. Khôi ph?c l?i
+-- 6. KhÃ´i ph?c l?i
 
 INSERT INTO SinhVien
 (SELECT * FROM SinhVien AS OF TIMESTAMP (SYSTIMESTAMP - INTERVAL '10' SECOND)
@@ -191,14 +194,15 @@ INSERT INTO SinhVien
  SELECT * FROM SinhVien WHERE MaSV = 'SV_RESTORE';
 COMMIT;
 
--- 7. Ki?m tra k?t qu? (CH?P H?NH 3: D? li?u ð? v?)
--- 1. Gi? l?p vi?c App g?i tên ngý?i dùng xu?ng (Set Context th? công)
+-- 7. Ki?m tra k?t qu? (CH?P H?NH 3: D? li?u Ã°? v?)
+-- 1. Gi? l?p vi?c App g?i tÃªn ngÃ½?i dÃ¹ng xu?ng (Set Context th? cÃ´ng)
 EXEC Pkg_Security.Set_User('SV001'); 
 
--- 2. Th?c hi?n hành ð?ng SELECT (Ð? kích ho?t Audit)
--- (Lýu ?: B?n ph?i ch?c ch?n ð? b?t AUDIT SELECT ON SINHVIEN trý?c ðó b?ng SYS)
+-- 2. Th?c hi?n hÃ nh Ã°?ng SELECT (Ã? kÃ­ch ho?t Audit)
+-- (LÃ½u ?: B?n ph?i ch?c ch?n Ã°? b?t AUDIT SELECT ON SINHVIEN trÃ½?c Ã°Ã³ b?ng SYS)
 SELECT * FROM SinhVien;
 
--- 3. Ð?i sang user Admin và làm l?i thao tác
+-- 3. Ã?i sang user Admin vÃ  lÃ m l?i thao tÃ¡c
 EXEC Pkg_Security.Set_User('ADMIN');
+
 SELECT * FROM SinhVien;
