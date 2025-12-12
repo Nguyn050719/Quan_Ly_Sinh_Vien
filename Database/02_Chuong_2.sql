@@ -34,7 +34,7 @@ CREATE TABLE Diem (
     CONSTRAINT fk_diem_monhoc FOREIGN KEY (FK_MH_Diem) REFERENCES MonHoc(MaMH)
 );
 
--- B?ng Diem_SinhVien (b?ng trung gian cho quan h? Many-to-Many gi?a SinhVien và Diem)
+-- B?ng Diem_SinhVien (b?ng trung gian cho quan h? Many-to-Many gi?a SinhVien vÃ  Diem)
 CREATE TABLE Diem_SinhVien (
     FK_SV_DiemSV VARCHAR2(10),
     FK_Diem_DiemSV VARCHAR2(10),
@@ -43,7 +43,7 @@ CREATE TABLE Diem_SinhVien (
     CONSTRAINT fk_diem_sinhvien_diem FOREIGN KEY (FK_Diem_DiemSV) REFERENCES Diem(MaDiem)
 );
 
--- B?ng Diem_MonHoc (b?ng trung gian cho quan h? Many-to-Many gi?a Diem và MonHoc)
+-- B?ng Diem_MonHoc (b?ng trung gian cho quan h? Many-to-Many gi?a Diem vÃ  MonHoc)
 CREATE TABLE Diem_MonHoc (
     FK_Diem_DMH VARCHAR2(10),
     FK_MH_DMH VARCHAR2(10),
@@ -52,7 +52,7 @@ CREATE TABLE Diem_MonHoc (
     CONSTRAINT fk_diem_monhoc_monhoc FOREIGN KEY (FK_MH_DMH) REFERENCES MonHoc(MaMH)
 );
 
--- B?ng SinhVien_Lop (b?ng trung gian cho quan h? Many-to-Many gi?a SinhVien và Lop)
+-- B?ng SinhVien_Lop (b?ng trung gian cho quan h? Many-to-Many gi?a SinhVien vÃ  Lop)
 CREATE TABLE SinhVien_Lop (
     FK_SV_SL VARCHAR2(10),
     FK_Lop_SL VARCHAR2(10),
@@ -61,18 +61,63 @@ CREATE TABLE SinhVien_Lop (
     CONSTRAINT fk_sinhvien_lop_lop FOREIGN KEY (FK_Lop_SL) REFERENCES Lop(MaLop)
 );
 
+-- Cáº­p nháº­t báº£ng Diem:
+ALTER TABLE Diem DROP CONSTRAINT fk_diem_sinhvien;
+ALTER TABLE Diem 
+ADD CONSTRAINT fk_diem_sinhvien FOREIGN KEY (FK_SV_Diem)
+REFERENCES SinhVien(MaSV) ON DELETE CASCADE;
 
--- Chýõng 2:
--- 1. M? r?ng c?t SDT: V? m? hóa AES s? t?o ra chu?i k? t? dài hõn s? ði?n tho?i b?nh thý?ng
+-- Cáº­p nháº­t báº£ng Diem_SinhVien:
+ALTER TABLE Diem_SinhVien DROP CONSTRAINT fk_diem_sinhvien_sv;
+ALTER TABLE Diem_SinhVien 
+ADD CONSTRAINT fk_diem_sinhvien_sv FOREIGN KEY (FK_SV_DiemSV)
+REFERENCES SinhVien(MaSV) ON DELETE CASCADE;
+
+-- Cáº­p nháº­t báº£ng SinhVien_Lop:
+ALTER TABLE SinhVien_Lop DROP CONSTRAINT fk_sinhvien_lop_sv;
+ALTER TABLE SinhVien_Lop 
+ADD CONSTRAINT fk_sinhvien_lop_sv FOREIGN KEY (FK_SV_SL)
+REFERENCES SinhVien(MaSV) ON DELETE CASCADE;
+-- Cáº­p nháº­t báº£ng Diem:
+ALTER TABLE Diem DROP CONSTRAINT fk_diem_monhoc;
+ALTER TABLE Diem 
+ADD CONSTRAINT fk_diem_monhoc FOREIGN KEY (FK_MH_Diem)
+REFERENCES MonHoc(MaMH) ON DELETE CASCADE;
+
+-- Cáº­p nháº­t báº£ng Diem_MonHoc:
+ALTER TABLE Diem_MonHoc DROP CONSTRAINT fk_diem_monhoc_monhoc;
+ALTER TABLE Diem_MonHoc 
+ADD CONSTRAINT fk_diem_monhoc_monhoc FOREIGN KEY (FK_MH_DMH)
+REFERENCES MonHoc(MaMH) ON DELETE CASCADE;
+
+-- Cáº­p nháº­t báº£ng SinhVien_Lop:
+ALTER TABLE SinhVien_Lop DROP CONSTRAINT fk_sinhvien_lop_lop;
+ALTER TABLE SinhVien_Lop 
+ADD CONSTRAINT fk_sinhvien_lop_lop FOREIGN KEY (FK_Lop_SL)
+REFERENCES Lop(MaLop) ON DELETE CASCADE;
+
+-- Cáº­p nháº­t báº£ng Diem_SinhVien:
+ALTER TABLE Diem_SinhVien DROP CONSTRAINT fk_diem_sinhvien_diem;
+ALTER TABLE Diem_SinhVien 
+ADD CONSTRAINT fk_diem_sinhvien_diem FOREIGN KEY (FK_Diem_DiemSV)
+REFERENCES Diem(MaDiem) ON DELETE CASCADE;
+
+-- Cáº­p nháº­t báº£ng Diem_MonHoc:
+ALTER TABLE Diem_MonHoc DROP CONSTRAINT fk_diem_monhoc_diem;
+ALTER TABLE Diem_MonHoc 
+ADD CONSTRAINT fk_diem_monhoc_diem FOREIGN KEY (FK_Diem_DMH)
+REFERENCES Diem(MaDiem) ON DELETE CASCADE;
+-- ChÃ½Ãµng 2:
+-- 1. M? r?ng c?t SDT: V? m? hÃ³a AES s? t?o ra chu?i k? t? dÃ i hÃµn s? Ã°i?n tho?i b?nh thÃ½?ng
 ALTER TABLE SinhVien MODIFY SDT VARCHAR2(200);
 
--- 2. Thêm c?t Avatar: Ki?u BLOB ð? ch?a d? li?u h?nh ?nh (M? hóa Lai)
+-- 2. ThÃªm c?t Avatar: Ki?u BLOB Ã°? ch?a d? li?u h?nh ?nh (M? hÃ³a Lai)
 ALTER TABLE SinhVien ADD Avatar BLOB;
 
--- 3. Thêm c?t EncryptedKey: Ch?a khóa AES ð? ðý?c m? hóa b?ng RSA (M? hóa Lai)
+-- 3. ThÃªm c?t EncryptedKey: Ch?a khÃ³a AES Ã°? Ã°Ã½?c m? hÃ³a b?ng RSA (M? hÃ³a Lai)
 ALTER TABLE SinhVien ADD EncryptedKey VARCHAR2(1000);
 
--- 4. Thêm c?t ChuKySo: Ch?a ch? k? RSA xác th?c sinh viên (M? hóa B?t ð?i x?ng)
+-- 4. ThÃªm c?t ChuKySo: Ch?a ch? k? RSA xÃ¡c th?c sinh viÃªn (M? hÃ³a B?t Ã°?i x?ng)
 ALTER TABLE SinhVien ADD ChuKySo VARCHAR2(2000);
 
 COMMIT;
@@ -81,5 +126,6 @@ COMMIT;
 SELECT MaSV, TenDangNhap, MatKhau, SDT, EncryptedKey, ChuKySo 
 FROM SinhVien 
 ORDER BY MaSV DESC;
+
 
 SELECT Avatar FROM SinhVien
